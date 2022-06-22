@@ -1,0 +1,121 @@
+{
+	"version": 2,
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "black",
+					"color": "#39414d",
+					"name": "Schwarz"
+				},
+				{
+					"slug": "grey",
+					"color": "#5f6469",
+					"name": "Grau"
+				},
+				{
+					"slug": "light-grey",
+					"color": "#85888b",
+					"name": "Hellgrau"
+				},
+				{
+					"slug": "pale-grey",
+					"color": "#f3f6f9",
+					"name": "Zartgrau"
+				},
+				{
+					"slug": "white",
+					"color": "#FFFFFF",
+					"name": "Weiß"
+				},
+				{
+					"slug": "dark-blue",
+					"color": "#003064",
+					"name": "Dunkelblau"
+				},
+				{
+					"slug": "light-blue",
+					"color": "#ccecf9",
+					"name": "Hellblau"
+				},
+				{
+					"slug": "orange",
+					"color": "#f29400",
+					"name": "Orange"
+				}
+			],
+			"defaultPalette": false,
+			"custom": false,
+			"gradients": [],
+			"defaultGradients": false,
+			"customGradient": false,
+			"duotone": [],
+			"customDuotone": false,
+			"link": true
+		},
+		"typography": {
+			"dropCap": false,
+			"customFontSize": true,
+			"lineHeight": true,
+			"fontStyle": false,
+			"fontWeight": false,
+			"letterSpacing": false,
+			"textDecoration": false,
+			"textTransform": false,
+			"fontFamilies": [],
+			"fontSizes": [
+				{
+					"slug": "small",
+					"size": "15px",
+					"name": "Klein"
+				},
+				{
+					"slug": "medium",
+					"size": "22px",
+					"name": "Mittel"
+				},
+				{
+					"slug": "large",
+					"size": "26px",
+					"name": "Groß"
+				},
+				{
+					"slug": "xlarge",
+					"size": "32px",
+					"name": "Extra-Groß"
+				}
+			]
+		},
+		"spacing": {
+			"blockGap": "var( --content-gutter )",
+			"margin": true,
+			"padding": true,
+			"units": [ "rem", "px", "%", "vh", "vw" ]
+		},
+		"layout": {
+			"contentSize": "960px",
+			"wideSize": "1152px"
+		}
+	},
+	
+	"styles": {
+		"color": {
+			"text": "var( --wp--preset--color--black )",
+			"link": "var( --wp--preset--color--orange )"
+		},
+		"typography": {
+			"fontSize": "1.8rem",
+			"lineHeight": "1.7"
+		},
+		"blocks": {
+			"core/button": {
+				"typography": {
+					"fontSize": "1.6rem"
+				},
+				"border": {
+					"radius": "2.5rem"
+				}
+			}
+		}
+	}
+}

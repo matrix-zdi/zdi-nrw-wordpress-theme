@@ -1,0 +1,118 @@
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: var( --wp--preset--color--grey );
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: var( --wp--preset--color--grey );
+	opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: var( --wp--preset--color--grey );
+	opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: var( --wp--preset--color--grey );
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: var( --wp--preset--color--grey );
+}
+::placeholder { /* Most modern browsers support this now. */
+	color: var( --wp--preset--color--grey );
+}
+
+form {
+	fieldset {
+		border: none;
+		// background: $color-lightgrey;
+		// padding: 2.5rem;
+		// border-radius: $radius;
+		padding: 0;
+		& > legend {
+			display: none;
+		}
+	}
+	
+	label {
+		// color: white;
+	}
+	
+	input[type=text],
+	input[type=search],
+	input[type=number],
+	input[type=tel],
+	input[type=email],
+	input[type=password],
+	input[type=submit],
+	input[type=button],
+	select,
+	textarea,
+	button {
+		appearance: none;
+		width: 100%;
+		padding: 1.0rem 2.0rem 0.8rem;
+		line-height: 1.6;
+		margin: 0.5rem 0;
+		border: 1px solid var( --wp--preset--color--grey );
+		&:focus {
+			outline: none;
+			border-color: var( --wp--preset--color--orange );
+		}
+	}
+	input[type=text],
+	input[type=search],
+	input[type=number],
+	input[type=tel],
+	input[type=email],
+	input[type=password],
+	input[type=submit],
+	input[type=button],
+	select,
+	button {
+		border-radius: var( --border-radius );
+	}
+	
+	textarea {
+		resize: vertical;
+		border-radius: var( --border-radius );
+	}
+	
+	select {
+		color: var( --wp--preset--color--grey );
+		// color: black;
+		appearance: none;
+		// background: none;
+		padding-right: 4rem;
+		background-image:
+			linear-gradient( 45deg, transparent 50%, var( --wp--preset--color--grey ) 50% ),
+			linear-gradient( 135deg, var( --wp--preset--color--grey ) 50%, transparent 50% ),
+			linear-gradient( to right, var( --wp--preset--color--grey ), var( --wp--preset--color--grey ) );
+		background-position:
+			calc( 100% - 1.8rem ) 52%,
+			calc( 100% - 1.2rem ) 52%,
+			calc( 100% - 3.4rem ) 0.75rem;
+		background-size:
+			0.6rem 0.6rem,
+			0.6rem 0.6rem,
+			0.1rem calc( 100% - 1.5rem );
+		background-repeat: no-repeat;
+	}
+
+	input[type=submit],
+	input[type=button],
+	button[type=submit] {
+		// background: white;
+		// border: none;
+		// transition: all 0.33s ease;
+		// padding: 1rem;
+		// color: var( --wp--preset--color--petrol-100 );
+		// width: 100%;
+		background: var( --wp--preset--color--orange );
+		border-color: var( --wp--preset--color--orange );
+		color: var( --wp--preset--color--white );
+		font-weight: bold;
+		text-align: center;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+}

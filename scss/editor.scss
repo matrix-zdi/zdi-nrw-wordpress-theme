@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'fonts';
+
+#editor .editor-styles-wrapper,
+#widgets-editor .editor-styles-wrapper {
+	
+	isolation: isolate;
+	overflow-x: hidden;
+	padding: 0;
+
+	font-family: var( --fonts--main );
+	
+	.editor-post-title__input {
+		margin-top: 5rem;
+		margin-bottom: 7.5rem;
+		position: relative;
+		padding-right: 2.5%;
+		color: var( --wp--preset--color--dark-blue );
+		&::before {
+			content: "";
+			position: absolute;
+			height: calc( 100% + 3rem );
+			width: 100vw;
+			top: -1.5rem;
+			right: 0;
+			border-top-right-radius: 50rem;
+			border-bottom-right-radius: 50rem;
+			background: var( --wp--preset--color--light-blue );
+			z-index: -1;
+		}
+	}
+
+	@import 'base';
+	@import 'blocks';
+	@import 'forms';
+	
+	.wp-block[data-align=wide] {
+		max-width: calc( 1.2 * var( --content-width ) );
+	}
+
+}
+#widgets-editor {
+	.editor-styles-wrapper .block-editor-block-list__layout {
+		background: var( --wp--preset--color--pale-grey );
+	}
+	.wp-block[data-type="core/widget-area"],
+	.editor-styles-wrapper {
+		max-width: var( --content-width );
+	}
+}

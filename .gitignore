@@ -1,0 +1,9 @@
+# Config files
+.DS_Store
+config.codekit3
+package-lock.json
+package.json
+
+# Folders
+.nova/
+node_modules/

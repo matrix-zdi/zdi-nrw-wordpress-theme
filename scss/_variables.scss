@@ -1,0 +1,25 @@
+@import 'functions';
+
+:root {
+	--fonts--main: 'Roboto', Helvetica, Arial, sans-serif;
+	--header-height: 10rem;
+	--content-width: 960px;
+	--content-gutter: 1.5rem;
+	--transition-time: 0.25s;
+	--transition-time--longer: 0.5s;
+	--border-radius: 2.5rem;
+	@include responsive( lg ) {
+		--content-width: 960px;
+	}
+	@include responsive( md ) {
+		--content-width: 800px;
+	}
+	@include responsive( sm ) {
+		--header-height: 6.5rem;
+		--content-width: 640px;
+		--content-gutter: 2rem;
+	}
+	@include responsive( xs ) {
+		--content-width: calc( 100% - 2 * var( --content-gutter ) );
+	}
+}

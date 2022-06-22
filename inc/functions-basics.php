@@ -1,0 +1,43 @@
+<?php
+
+defined( 'ABSPATH' ) || die();
+
+function zdinrw_setup() {
+	add_theme_support( 'title-tag' );
+	add_theme_support( 'custom-logo' );
+	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'post-thumbnails' );
+	
+	add_theme_support( 'wp-block-styles' );
+	add_theme_support( 'align-wide' );
+	add_theme_support( 'responsive-embeds' );
+	remove_theme_support( 'core-block-patterns' );
+	remove_theme_support( 'block-templates' );
+	
+	register_nav_menus( array(
+		'main' => 'Hauptmenü'
+	) );
+	
+	register_sidebar( array(
+		'id' => 'footer',
+		'name' => 'Footer',
+		'before_sidebar' => '<ul class="widgets">',
+		'after_sidebar' => '</ul>'
+	) );
+	
+	register_block_pattern_category( 'zdinrw', array( 'label' => 'zdi.NRW' ) );
+}
+add_action( 'after_setup_theme', 'zdinrw_setup' );
+
+function zdinrw_editor_styles_scripts() {
+	wp_enqueue_style( 'zdinrw-editor-style', get_template_directory_uri() . '/css/editor.min.css', array(), filemtime( get_template_directory() . '/css/editor.min.css' ) );
+	wp_enqueue_script( 'zdinrw-editor-script', get_template_directory_uri() . '/js/editor.min.js', array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ), filemtime( get_template_directory() . '/js/editor.min.js' ), true );
+}
+add_action( 'enqueue_block_editor_assets', 'zdinrw_editor_styles_scripts' );
+
+function zdinrw_frontend_styles_scripts() {
+	wp_enqueue_style( 'zdinrw-style', get_template_directory_uri() . '/css/style.min.css', array(), filemtime( get_template_directory() . '/css/style.min.css' ) );
+	wp_enqueue_script( 'zdinrw-script', get_template_directory_uri() . '/js/script.min.js', array(), filemtime( get_template_directory() . '/js/script.min.js' ), false );
+}
+add_action( 'wp_enqueue_scripts', 'zdinrw_frontend_styles_scripts' );

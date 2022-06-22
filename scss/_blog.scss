@@ -1,0 +1,97 @@
+.blog__grid {
+	--gap: calc( 2 * var( --content-gutter ) );
+	@include responsive( sm ) {
+		--gap: var( --content-gutter );
+	}
+	display: flex;
+	flex-wrap: wrap;
+	gap: var( --gap );
+}
+
+.blog__single-post {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0rem 0rem 1.5rem rgba( 0, 0, 0, 0.05 ),
+				0rem 1rem 2.0rem rgba( 0, 0, 0, 0.05 );
+	border-bottom-right-radius: var( --border-radius );
+	padding: calc( 2 * var( --content-gutter ) );
+	width: calc( ( 100% - 2 * var( --gap ) ) / 3 );
+	@include responsive( sm ) {
+		width: calc( ( 100% - var( --gap ) ) / 2 );
+		padding: var( --content-gutter );
+	}
+	@include responsive( xs ) {
+		width: 100%;
+	}
+}
+
+.blog__single-post__thumbnail {
+	margin-bottom: var( --content-gutter )
+}
+
+.blog__single-post__title-link {
+	text-decoration: none;
+}
+
+.blog__single-post__title {
+	font-size: 2.4rem;
+	color: var( --wp--preset--color--dark-blue );
+	// font-weight: normal;
+	margin: 0;
+}
+
+.blog__single-post__excerpt {
+	font-size: 1.6rem;
+	line-height: 1.4;
+	margin: var( --content-gutter ) 0;
+}
+
+.blog__single-post__read-more {
+	margin-top: auto;
+}
+
+
+
+.post-pagination {
+	margin: 7.5rem auto;
+	text-align: center;
+	.nav-links {
+		display: flex;
+		justify-content: center;
+	}
+	.page-numbers {
+		display: block;
+		padding: 0.1rem 0.5rem;
+		margin: 1rem;
+		color: var( --wp--preset--color--grey );
+		text-decoration: none;
+		background-image: linear-gradient( currentColor, currentColor );
+		background-size: 0% 2px;
+		background-position: 0 100%;
+		background-repeat: no-repeat;
+		transition: background-size var( --transition-time ) ease;
+	}
+	.page-numbers:hover,
+	.page-numbers:focus {
+		background-size: 100% 2px;
+	}
+	.page-numbers.current {
+		text-decoration: none;
+		background: none;
+		color: var( --wp--preset--color--dark-blue );
+		font-weight: bold;
+	}
+	.page-numbers.next {}
+}
+
+
+// SINGLE POST
+.single-post-meta {
+	margin-top: 3rem;
+	font-size: smaller;
+	color: var( --wp--preset--color--light-grey );
+	p {
+		margin: 0;
+	}
+}
+

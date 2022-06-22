@@ -1,0 +1,12 @@
+$vw-xl: 1600px;
+$vw-lg: 1220px;
+$vw-md: 960px;
+$vw-sm: 782px; // comply with Gutenberg breakpoint
+$vw-xs: 600px; // comply with Gutenberg breakpoint
+
+@mixin responsive( $media ) {
+		 @if $media == lg { @media only screen and ( max-width: $vw-xl - 1 ) { @content; } }
+	@else if $media == md { @media only screen and ( max-width: $vw-lg - 1 ) { @content; } }
+	@else if $media == sm { @media only screen and ( max-width: $vw-md - 1 ) { @content; } }
+	@else if $media == xs { @media only screen and ( max-width: $vw-sm - 1 ) { @content; } }
+}
