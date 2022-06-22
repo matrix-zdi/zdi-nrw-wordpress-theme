@@ -22,17 +22,10 @@
 form {
 	fieldset {
 		border: none;
-		// background: $color-lightgrey;
-		// padding: 2.5rem;
-		// border-radius: $radius;
 		padding: 0;
 		& > legend {
 			display: none;
 		}
-	}
-	
-	label {
-		// color: white;
 	}
 	
 	input[type=text],
@@ -77,9 +70,7 @@ form {
 	
 	select {
 		color: var( --wp--preset--color--grey );
-		// color: black;
 		appearance: none;
-		// background: none;
 		padding-right: 4rem;
 		background-image:
 			linear-gradient( 45deg, transparent 50%, var( --wp--preset--color--grey ) 50% ),
@@ -99,12 +90,6 @@ form {
 	input[type=submit],
 	input[type=button],
 	button[type=submit] {
-		// background: white;
-		// border: none;
-		// transition: all 0.33s ease;
-		// padding: 1rem;
-		// color: var( --wp--preset--color--petrol-100 );
-		// width: 100%;
 		background: var( --wp--preset--color--orange );
 		border-color: var( --wp--preset--color--orange );
 		color: var( --wp--preset--color--white );

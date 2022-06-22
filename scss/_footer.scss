@@ -1,12 +1,9 @@
 footer {
 	background: var( --wp--preset--color--pale-grey );
-	// clip-path: polygon( 0 3vw, 100% 0, 100% 100%, 0 100% );
 	margin-top: calc( 5vw + 5rem );
 }
 
 #footer__widgets {
-	// background: var( --wp--preset--color--grey-90 );
-	// color: white;
 	padding: calc( 3vw + 2rem ) 0 2rem;
 	ul.widgets {
 		padding: 0;

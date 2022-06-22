@@ -43,7 +43,6 @@ h4,
 h5,
 h6 {
 	line-height: 1.2;
-	// text-transform: uppercase;
 }
 
 h1 {
@@ -67,8 +66,6 @@ h2 {
 	@include responsive( xs ) {
 		font-size: 2.6rem;
 	}
-	// margin-top: 4rem;
-	// margin-bottom: 2rem;
 }
 
 h3 {
@@ -76,26 +73,18 @@ h3 {
 	@include responsive( xs ) {
 		font-size: 2.2rem;
 	}
-	// margin-top: 3rem;
-	// margin-bottom: 1.5rem;
 }
 
 h4 {
 	font-size: 1.8rem;
-	// margin-top: 2rem;
-	// margin-bottom: 1rem;
 }
 
 h5 {
 	font-size: 1.8rem;
-	// margin-top: 2rem;
-	// margin-bottom: 1rem;
 }
 
 h6 {
 	font-size: 1.8rem;
-	// margin-top: 2rem;
-	// margin-bottom: 1rem;
 }
 
 :is( h1, h2, h3, h4, h5, h6 ) em {
@@ -198,10 +187,6 @@ td {
 figure {
 	margin-top: 0;
 	margin-bottom: 0;
-	// margin-block-start: unset;
-	// margin-block-end: unset;
-	// margin-inline-start: unset;
-	// margin-inline-end: unset;
 	img {
 		display: block;
 	}
@@ -213,8 +198,6 @@ img {
 }
 
 hr {
-	// border: 0;
-	// height: 1px;
 	margin-top: 4rem;
 	margin-bottom: 4rem;
 }

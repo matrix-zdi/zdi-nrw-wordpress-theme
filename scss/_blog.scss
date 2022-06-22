@@ -36,7 +36,6 @@
 .blog__single-post__title {
 	font-size: 2.4rem;
 	color: var( --wp--preset--color--dark-blue );
-	// font-weight: normal;
 	margin: 0;
 }
 
@@ -49,8 +48,6 @@
 .blog__single-post__read-more {
 	margin-top: auto;
 }
-
-
 
 .post-pagination {
 	margin: 7.5rem auto;
@@ -84,8 +81,6 @@
 	.page-numbers.next {}
 }
 
-
-// SINGLE POST
 .single-post-meta {
 	margin-top: 3rem;
 	font-size: smaller;
@@ -94,4 +89,3 @@
 		margin: 0;
 	}
 }
-

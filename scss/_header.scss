@@ -12,7 +12,6 @@
 	@include responsive( sm ) {
 		padding: calc( 0.5 * var( --content-gutter ) ) var( --content-gutter );
 	}
-	// color: var( --wp--preset--color--black );
 	background-color: var( --wp--preset--color--white );
 	z-index: 450;
 	box-shadow: 0rem 0.0rem 0.5rem rgba( 0, 0, 0, 0.05 ),
@@ -32,8 +31,6 @@
 	text-decoration: none;
 	line-height: 1;
 	display: block;
-	// height: 100%;
-	// width: auto;
 	margin-right: auto;
 }
 #header__site-title {
@@ -120,22 +117,16 @@
 	transform-origin: left center;
 }
 
-body.header-menu--visible #header__nav-link span {
-	// background-color: var( --wp--preset--color--white );
-}
-
 body.header-menu--visible #header__nav-link span:nth-child( 1 ) {
 	transform: rotate( 45deg );
 	top: 3px;
 	left: 5px;
 }
-
 body.header-menu--visible #header__nav-link span:nth-child( 2 ) {
 	left: 50%;
 	width: 0%;
 	opacity: 0;
 }
-
 body.header-menu--visible #header__nav-link span:nth-child( 3 ) {
 	transform: rotate( -45deg );
 	top: 24.5px;
@@ -317,8 +308,6 @@ body.header-menu--visible #header__nav-link span:nth-child( 3 ) {
 	
 }
 
-
-
 /*************************************
 ********** HEADER SEARCH *************
 *************************************/
@@ -410,75 +399,6 @@ body.header-search--visible {
 	}
 }
 
-
-
-
-
-
-
-/**********************************************
-********** POST THUMBNAIL & TITLE *************
-**********************************************/
-
-body:not( .page-template-template-blank ) {
-	--page-title--pad-top: 12.5rem;
-	@include responsive( sm ) {
-		--page-title--pad-top: 7.5rem;
-	}
-	.page-title {
-		padding-top: calc( var( --page-title--pad-top ) + 2.5rem );
-		padding-bottom: 7.5rem;
-		@include responsive( sm ) {
-			padding-bottom: 5rem;
-		}
-		h1 {
-			margin: 0 auto;
-		}
-		position: relative;
-		&::before {
-			content: "";
-			position: absolute;
-			left: calc( 0.5 * var( --content-width ) - 50vw );
-			top: 0;
-			width: 100vw;
-			height: 35rem;
-			background: var( --wp--preset--color--petrol-10 );
-			z-index: -1;
-			clip-path: polygon( 0 0, max( 75%, 60rem ) 0, 0 100% );
-			@include responsive( sm ) {
-				height: 20rem;
-			}
-			@include responsive( xs ) {
-				left: calc( -1 * var( --content-gutter ) );
-			}
-		}
-	}
-}
-
-body:not( .blog, .page-template-template-blank ) {
-	main > img.attachment-post-thumbnail {
-		width: 100%;
-		max-width: 100%;
-		height: 50rem;
-		vertical-align: middle;
-		object-fit: cover;
-		object-position: center center;
-		clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc( 100% - var( --page-title--pad-top ) ) );
-		@include responsive( sm ) {
-			height: 40rem;
-		}
-		@include responsive( sm ) {
-			height: 30rem;
-		}
-	}
-
-	img.attachment-post-thumbnail + .page-title {
-		margin-top: calc( var( --page-title--pad-top ) * -1 );
-	}
-}
-
-
-
 /**********************************************
 ********** BREADCRUMB NAVIGATION **************
 **********************************************/
@@ -493,12 +413,6 @@ body:not( .blog, .page-template-template-blank ) {
 	}
 }
 
-.breadcrumb-navigation__element {
-	
-}
-
 .breadcrumb-navigation__element + .breadcrumb-navigation__element::before {
 	content: "»";
 }
-
-
