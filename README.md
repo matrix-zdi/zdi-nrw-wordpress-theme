@@ -4,7 +4,7 @@ Das zdi.NRW WordPress Theme für zdi-Netzwerke und -Akteure.
 
 ## Installation
 
-- Navigieren Sie unter [**Releases**](/releases) zur gewünschten Version oder direkt [zum neuesten Release](/releases/latest).
+- Navigieren Sie unter [**Releases**](releases) zur gewünschten Version oder direkt [zum neuesten Release](/releases/latest).
 - Laden Sie die Source Code ZIP-Datei herunter.
 - Navigieren Sie in Ihrer WordPress-Installation im Hauptmenü zu Themes.
 - Wählen Sie **Themes hinzufügen** > **Theme hochladen**.
@@ -13,4 +13,4 @@ Das zdi.NRW WordPress Theme für zdi-Netzwerke und -Akteure.
 
 ## Informationen
 
-Für weitere Informationen zum Projekt besuchen Sie das [ZDI-Portal](https://zdi-portal.de/)
+Für weitere Informationen zum Projekt besuchen Sie das [ZDI-Portal](https://zdi-portal.de/).
