@@ -4,9 +4,9 @@ Das zdi.NRW WordPress Theme für zdi-Netzwerke und -Akteure.
 
 ## Installation
 
-- Navigieren Sie unter [**Releases**](https://github.com/matrix-zdi/zdi-nrw/releases) zur gewünschten Version oder direkt [zum neuesten Release](https://github.com/matrix-zdi/zdi-nrw/releases/latest).
-- Laden Sie die **Source code (zip)** Datei herunter.
-- Navigieren Sie in Ihrer WordPress-Installation im Hauptmenü zu Themes.
+- Navigieren Sie [zum neuesten Release](https://github.com/matrix-zdi/zdi-nrw-wordpress-theme/releases/latest) oder unter [**Releases**](https://github.com/matrix-zdi/zdi-nrw-wordpress-theme/releases) zur gewünschten Version.
+- Laden Sie die Datei **zdi-nrw.zip** herunter.
+- Navigieren Sie in Ihrer WordPress-Installation im Hauptmenü zu **Themes**.
 - Wählen Sie **Themes hinzufügen** > **Theme hochladen**.
 - Laden Sie die heruntergeladene ZIP-Datei hoch.
 - Aktivieren Sie das zdi.NRW Theme in der Übersicht installierter Themes.
