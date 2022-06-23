@@ -399,9 +399,23 @@ body.header-search--visible {
 	}
 }
 
-/**********************************************
-********** BREADCRUMB NAVIGATION **************
-**********************************************/
+/******************************
+********** TITLE **************
+******************************/
+
+body:not( .page-template-template-blank ) {
+	.page-title {
+		padding-top: calc( var( --header-height ) + 5rem );
+		padding-bottom: calc( var( --header-height ) - 3rem );
+		h1 {
+			margin: 0 auto;
+		}
+	}
+}
+
+/*************************************
+******* BREADCRUMB NAVIGATION ********
+*************************************/
 
 .breadcrumb-navigation {
 	font-size: smaller;

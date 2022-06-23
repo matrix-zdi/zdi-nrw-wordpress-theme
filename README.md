@@ -17,4 +17,6 @@ Eine Aktualisierung des Themes auf eine neuere Version kann mit den selben Schri
 
 ## Informationen
 
+Eine Vorschau des Themes kann unter [template.zdi-portal.de](https://template.zdi-portal.de/) aufgerufen werden. Diese Muster-Seite ist allein mit den im Theme enthaltenen Mitteln und Patterns aufgebaut.
+
 Für weitere Informationen zum Projekt besuchen Sie das [ZDI-Portal](https://zdi-portal.de/).
