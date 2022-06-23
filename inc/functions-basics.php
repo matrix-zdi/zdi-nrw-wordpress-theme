@@ -2,7 +2,7 @@
 
 defined( 'ABSPATH' ) || die();
 
-define( 'ZDINRW_THEME_VERSION', '1.0' );
+define( 'ZDINRW_THEME_VERSION', '1.0.1' );
 
 function zdinrw_setup() {
 	add_theme_support( 'title-tag' );
