@@ -10,7 +10,7 @@
 		<?php wp_body_open(); ?>
 		<header id="header" class="content-container">
 			
-			<div id="header__content" class="alignwide">
+			<div id="header__content">
 				
 				<?php
 				if( has_custom_logo() ) {
